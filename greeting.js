@@ -12,6 +12,9 @@
 //     alert ("arr больше arr2")
 // }
 // console.log(arr, arr2)
+
+
+
 let str = ''
 for (let i = 0; i <= 7; i++){
     console.log(str)
@@ -29,11 +32,4 @@ for (; num < 100; num++){
     }else{
         console.log(num)
     }
-}
-let a = 5
-let b = '5'
-if (a === b){
-    console.log('true')
-}else{
-    console.log('false')
 }
