@@ -12,24 +12,28 @@
 //     alert ("arr больше arr2")
 // }
 // console.log(arr, arr2)
-
-
-function f1(){
-    for (let pk = "*"; pk.length < 8; pk+="*"){
-        console.log(pk);
-    }
+let str = ''
+for (let i = 0; i <= 7; i++){
+    console.log(str)
+    str += '*'
 }
-f1()
 
-let num =1;
+let num = 1;
 for (; num < 100; num++){
     if(num % 5 === 0 && num % 3 === 0) {
-        document.write( num, "= FizzBuzz <br />")
-    }else if (num%5 ===0) {
-        document.write( num, "= Buzz <br />");
+        console.log('Fizzbuzz' + num)
+    }else if (num % 5 === 0) {
+        console.log('Buzz' + num)
     }else if (num%3 === 0){
-        document.write( num, " = Fizz <br/ >" );
+        console.log('Fizz'+num)
     }else{
-        document.write( num, "<br/ >" );
+        console.log(num)
     }
+}
+let a = 5
+let b = '5'
+if (a === b){
+    console.log('true')
+}else{
+    console.log('false')
 }
