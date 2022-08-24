@@ -79,32 +79,75 @@
 
 
 
-const block = document.querySelectorAll(".block")
-console.log(block)
+// const block = document.querySelectorAll(".block")
+// console.log(block)
+//
+// const button = document.getElementById('button')
+// const input = document.getElementById('input')
+//
+//
+// button.onclick = () => {
+//     const div = document.createElement('div')
+//
+//     const deleteButton = document.createElement('button')
+//     deleteButton.innerText = 'delete'
+//
+//     const changeButton = document.createElement('button')
+//     changeButton.innerText = 'change'
+//
+//     const p = document.createElement('p')
+//     div.setAttribute('class','block')
+//     p.innerText = input.value
+//
+//     div.append(p)
+//     div.append(deleteButton, changeButton)
+//     document.body.append(div)
+//
+//     deleteButton.onclick = () => {
+//         div.remove()
+//     }
+//     changeButton.onclick = () => {
+//         const text = prompt('введите изменения')
+//         p.innerText = text
+//     }
+// }
+
+
+
+const fruits = ['яблоко', 'груша']
+const car = ['хонда', 'тойота']
+const notebook = ['lenovo','macbook']
+const name = ['robert', 'paulo']
+const age = [19, 25]
+
+const all = [...fruits, car, notebook, name, age]
+console.log(all)
+
+
+
+const obj = {
+    first_name: 'roman',
+    age: '20',
+    last_name: 'aaron',
+    favorite_fruit: 'mango',
+    car: 'bmw'
+}
+
+const objAll = {
+    ...obj,
+    key1: 'nick',
+    key2: 'kick',
+    key3: 'nin'
+}
+console.log(objAll)
+
 
 const button = document.getElementById('button')
 const input = document.getElementById('input')
 
-
-button.onclick = () => {
+    button.onclick = () => {
     const div = document.createElement('div')
-    const deleteButton = document.createElement('button')
-    deleteButton.innerText = 'delete'
-    const changeButton = document.createElement('button')
-    changeButton.innerText = 'change'
-    const p = document.createElement('p')
-    div.setAttribute('class','block')
-    p.innerText = input.value
 
-    div.append(deleteButton, changeButton, p)
     document.body.append(div)
-
-    deleteButton.onclick = () => {
-        div.remove()
-    }
-    changeButton.onclick = () => {
-        const text = prompt('введите изменения')
-        p.innerText = text
-    }
+    div.innerText = 'HELLO' + ', ' + input.value
 }
-
